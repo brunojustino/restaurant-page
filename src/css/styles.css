@@ -3,22 +3,33 @@
     --gray-10: #4b5d6827;
     --blue: #212353;
     --purple: #9C69E2;
+    --purple-10: #9b69e238;
     --pink: #F063B8;
     --pink-10: #f063b834;
+    --pink-50: #f063b886;
     --light-blue: #68C9BA;
     --white: #eeeeee;
   }
 
-*{
+*, *::before, *::after{
     box-sizing: border-box;
+}
+
+* {
     margin: 0;
     padding: 0;
 }
 
 body{
-    background: var(--white);
+    background: var(--purple-10);
     color: var(--blue);
 }
+
+body:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
 ul{
     list-style: none;
@@ -36,36 +47,61 @@ ul{
 header{
     place-self: center center;
     width: 100vw;
+    background-color: var(--gray-10);
+    /* border-radius: 50px; */
 }
 
 header ul{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 header li{
     padding: 2%;
 }
 
-header li .icon{
+.links{
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: var(--pink);
+}
 
+.icon{
+    /* margin-right: 5%; */
 }
 
 .contact{
     margin-left: 20%;
+    max-width: 200px;
+    width: 100%;
+    min-width: 185px;
 }
 
 
 .main{
-background-color: var(--pink-10);
-border-radius: 30px;
-width: 80vw;
-display: flex;
-justify-content: center;
-margin: 20px auto;
+    background-color: var(--pink-10);
+    border-radius: 30px;
+    max-width: 80vw;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
 }
 
+.main-img{
+    
+}
+
+.main-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.main-text{
+   min-width: 40%;
+   padding-top: 10px;
+}
 footer{
     place-self: end end;
     background-color: var(--gray-10);
@@ -79,16 +115,23 @@ footer{
 
 footer .left{
     flex: 1;
-
+    font-size: small;
 }
 
 footer .right{
     flex: 1
 }
 
-footer ul{
+footer .social-media ul{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+
+footer .social-media ul li{
+    padding: 10px;
 }
 
 footer ul li{
