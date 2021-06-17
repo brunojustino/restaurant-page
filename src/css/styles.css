@@ -48,18 +48,22 @@ header{
     place-self: center center;
     width: 100vw;
     background-color: var(--gray-10);
+    height: 100%;
     /* border-radius: 50px; */
 }
 
 header ul{
-    display: flex;
+    display: grid;
     justify-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+    height: 100%;
 }
 
 header li{
-    padding: 2%;
+    padding: 10px;
+    align-self: center;
 }
 
 .links{
@@ -70,6 +74,21 @@ header li{
 .icon{
     /* margin-right: 5%; */
 }
+
+#main{
+    color: var(--pink);
+    animation: rotation 6s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
 
 .contact{
     margin-left: 20%;
