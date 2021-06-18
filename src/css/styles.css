@@ -47,7 +47,7 @@ ul{
     list-style: none;
 }
 
-.container-grid{
+#content{
     display: grid;
     grid-template-rows: 1fr 4fr 1fr;
     width: 100vw;
@@ -56,7 +56,7 @@ ul{
     text-align: center;
 }
 
-header{
+.header{
     place-self: center center;
     width: 100vw;
     background-color: var(--bg-header);
@@ -64,7 +64,7 @@ header{
     /* border-radius: 50px; */
 }
 
-header ul{
+.header ul{
     display: grid;
     justify-content: center;
     /* flex-wrap: wrap; */
@@ -73,7 +73,7 @@ header ul{
     height: 100%;
 }
 
-header li{
+.header li{
     padding: 10px;
     align-self: center;
 }
@@ -102,12 +102,12 @@ header li{
   }
 
 
-.contact{
+/* .contact{
     margin-left: 20%;
     max-width: 200px;
     width: 100%;
     min-width: 185px;
-}
+} */
 
 
 .main{
@@ -133,7 +133,8 @@ header li{
    min-width: 40%;
    padding-top: 10px;
 }
-footer{
+
+.footer{
     place-self: end end;
     background-color: var(--bg-header);
     color: var(--ft-color);
@@ -145,16 +146,16 @@ footer{
     padding: 2vh;
 }
 
-footer .left{
+.footer .left{
     flex: 1;
     font-size: small;
 }
 
-footer .right{
+.footer .right{
     flex: 1
 }
 
-footer .social-media ul{
+.footer .social-media ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -162,10 +163,10 @@ footer .social-media ul{
 }
 
 
-footer .social-media ul li{
+.footer .social-media ul li{
     padding: 10px;
 }
 
-footer ul li{
+.footer ul li{
 
 }
