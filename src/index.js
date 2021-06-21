@@ -1,30 +1,38 @@
 import "./css/styles.css";
 import "./css/external.css";
 import "@fortawesome/fontawesome-free/js/all.js"
+import { pageChange } from './helpers'
 import { header } from './header'
 import { footer } from './footer'
-import { middle } from './middle'
+import { middle, about, products, testmonials, contact } from './middle'
 
-let mainHTML, aboutHTML, productsHTML, testmonialsHTML, contactHTML = ""
 
 let content = document.getElementById("content")
-
 
 content.appendChild(header())
 content.appendChild(middle())
 content.appendChild(footer())
 
-// content.innerHTML = header() + section1 + footer
+let mainPage = document.querySelector(".main")
+let currentPage = mainPage
+let aboutPage = about()
+let productsPage = products()
+let testmonialsPage = testmonials()
+let contactPage = contact()
 
-// let about = document.getElementById("about")
-// about.addEventListener("click", (e) => {
-//     e.preventDefault()
-//     console.log("test")
-//     let main = document.getElementsByClassName("main")
-//     main.innerHTML = ""
 
-// })
 
-function renderPage(div){
+let aboutLink =  document.getElementById("about")
+aboutLink.addEventListener("click", () => {
+    currentPage = pageChange(content, aboutPage, currentPage)
+})
+
+let productsLink = document.getElementById("products")
+productsLink.addEventListener("click", () => {
+    currentPage = pageChange(content, productsPage, currentPage)
+})
+
+
+function renderPage(page){
     
 }

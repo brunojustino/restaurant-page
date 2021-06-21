@@ -1,8 +1,6 @@
 import "@fortawesome/fontawesome-free/js/all.js"
+import { createLink, ce } from './helpers'
 
-function ce(s){
-    return document.createElement(s)
-}
 
 // let header = `
 // <div class="header">
@@ -34,22 +32,11 @@ iconA.appendChild(p)
 icon.appendChild(iconA)
 ul.appendChild(icon)
 
-//about link
-function createLink(name){
-    let li = ce("li")
-    li.className = "hvr-glow"
-    let a = ce("a")
-    a.id = name
-    a.className = "links link glow"
-    a.textContent = name
-    li.appendChild(a)
-    return li
-}
 
 ul.appendChild(createLink("about"))
-ul.appendChild(createLink("Products"))
-ul.appendChild(createLink("Testimonials"))
-ul.appendChild(createLink("Contact"))
+ul.appendChild(createLink("products"))
+ul.appendChild(createLink("testimonials"))
+ul.appendChild(createLink("contact"))
 
 headerDiv.appendChild(ul)
 
