@@ -65,8 +65,8 @@ ul{
     place-self: center center;
     width: 100vw;
     background-color: var(--bg-header);
-    height: 100%;
-    min-height: 141px
+    /* height: 100%; */
+    height: 141px
     /* border-radius: 50px; */
 }
 
@@ -156,6 +156,7 @@ ul{
     height: 12vh;
     bottom: 0px;
     display: flex;
+    align-items: center;
     justify-content: center;
     padding: 1vh;
 }
