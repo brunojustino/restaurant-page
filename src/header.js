@@ -35,7 +35,7 @@ ul.appendChild(icon)
 
 ul.appendChild(createLink("about"))
 ul.appendChild(createLink("products"))
-ul.appendChild(createLink("testimonials"))
+ul.appendChild(createLink("testmonials"))
 ul.appendChild(createLink("contact"))
 
 headerDiv.appendChild(ul)

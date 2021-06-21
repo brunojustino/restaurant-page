@@ -43,6 +43,10 @@ body:after {
     clear: both;
   }
 
+a:hover{
+    cursor: pointer;
+}
+
 ul{
     list-style: none;
 }
@@ -169,4 +173,8 @@ ul{
 
 .footer ul li{
 
+}
+
+.testmonials{
+    align-self: center;
 }
