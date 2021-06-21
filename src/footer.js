@@ -9,7 +9,7 @@ footerDiv.innerHTML =`<div class='left'>
     <li>drinkcachaca@cachaca.com</li>
     <li>(55) 81 123-456-789</li>
     <li>Br 101, km 10, Recife-PE, Brazil</li>
-    <li>Made by Bruno Justino, No Rights Reserved.</li>
+    <li>Made by <i>Bruno Justino</i>, No Rights Reserved.</li>
 </ul>
 
 </div>
@@ -18,8 +18,8 @@ footerDiv.innerHTML =`<div class='left'>
 <h4>Social Media</h4>
 <div class social-media-icons>
     <ul>
-        <li><i class='fab fa-2x fa-github-square'></i></li>
-        <li><i class='fab fa-2x fa-instagram-square'></i></li>
+        <li><a href="https://github.com/brunojustino/" target="_blank"><i class='fab fa-2x fa-github-square'></i></a></li>
+        <li><a href="https://www.instagram.com/brunojustino1/" target="_blank"><i class='fab fa-2x fa-instagram-square'></i></a></li>
     </ul>
 </div>
 </div>
